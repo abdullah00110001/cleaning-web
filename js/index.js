@@ -37,14 +37,14 @@ window.onscroll = () => {
 
 $(document).ready(function(){
     $('.carousel').carousel({
-        dist: 0,        // Keeps all items at the same distance (prevents left/right shifting)
-        padding: 50,    // Adds some padding for a smoother effect
+        dist: 0,        // Keeps all items at the same distance
+        padding: 50,    // Adds some padding for smoother effect
         fullWidth: false,
-        indicators: true // Adds dots for better navigation
+        indicators: true // Shows navigation dots
     });
 
-    // Auto-slide every 3 seconds (Optional)
+    // Auto-slide every 2 seconds (2000ms)
     setInterval(function(){
         $('.carousel').carousel('next');
-    }, 3000);
+    }, 2000);
 });
