@@ -23,27 +23,21 @@ window.onscroll = () => {
             document.querySelector(`header nav a[href*=${id}]`).classList.add('active');
         }
     });
-
-    // Toggle sticky header
     const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    // Close menu on scroll
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
 
 
-
 $(document).ready(function(){
     $('.carousel').carousel({
-        dist: 0,        // Keeps all items at the same distance
-        padding: 50,    // Adds some padding for smoother effect
+        dist: 0,   
+        padding: 50, 
         fullWidth: false,
-        indicators: true // Shows navigation dots
+        indicators: true
     });
-
-    // Auto-slide every 2 seconds (2000ms)
     setInterval(function(){
         $('.carousel').carousel('next');
     }, 2000);
