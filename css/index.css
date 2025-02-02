@@ -77,7 +77,7 @@ body {
 
 #menu-icon {
 	font-size: 2.6rem;
-	color: #4a81e7;
+	color: #000000;
 	display: none;
 }
 
@@ -705,16 +705,16 @@ section {
 		max-width: 350px;
 	}
 
-/*
-/* General fix: allow container to expand */
+
 
 	.contact form {
-		width: 100%;
+		width: 90%;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
 		padding: 3rem;
 		text-align: center;
+		margin: 2rem;
 	}
 
 	#ci {
@@ -755,46 +755,7 @@ section {
 	}
 }
 
-/*@media (max-width: 480px) {
-	html {
-		font-size: 50%;
-	}
 
-	.header {
-		padding: 1.5rem;
-	}
-
-	.home {
-		padding: 4rem;
-	}
-
-	.homec h2 {
-		font-size: 3rem;
-	}
-
-	.homec p {
-		font-size: 1.6rem;
-	}
-
-	.btn {
-		font-size: 1rem;
-		padding: 8px 16px;
-	}
-
-	.ig img {
-		width: 80%;
-	}
-
-	.contact {
-		padding: 3rem 1.5rem;
-	}
-
-	.footer {
-		padding: 2rem 1rem;
-	}
-}
-
-*/
 
 @media only screen and (max-width: 768px) {
   .reviews {
@@ -802,33 +763,33 @@ section {
   }
   
   .reviews .carousel {
-    display: flex;             /* Ensure flex display is enabled */
+    display: flex;    
     justify-content: center;
     align-items: center;
     margin: 20px auto;
-    flex-direction: row;       /* Horizontal (row) layout */
+    flex-direction: row;   
   }
   
   .reviews .carousel .carousel-item {
-    width: 100%;               /* Each item takes full container width */
+    width: 100%;           
     max-width: 100%;
-    margin: 0 auto;            /* Center the item */
+    margin: 0 auto;     
     height: auto;
   }
   
   .reviews .card {
-    width: 90%;                /* Adjust card width as desired */
-    max-width: 320px;          /* Optional max width */
+    width: 90%;          
+    max-width: 320px;        
     margin: 0 auto 30px;
     height: auto;
   }
   
   .reviews .main-text h2 {
-    font-size: 18px;           /* Adjust heading size for mobile */
+    font-size: 18px;    
   }
   
   .reviews .main-text p {
-    font-size: 14px;           /* Adjust paragraph text size */
-    padding: 0 15px;           /* Reduce padding on sides */
+    font-size: 14px;       
+    padding: 0 15px;        
   }
 }
